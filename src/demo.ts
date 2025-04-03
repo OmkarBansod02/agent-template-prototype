@@ -51,7 +51,7 @@ async function runDemo() {
     console.log(`Name: ${config.name}`);
     console.log(`Instructions: ${config.instructions}`);
     console.log(`Personality: ${config.personality}`);
-    console.log(`Model: ${config.model || 'gemini-1.5-flash-latest'}`);
+    console.log(`Model: ${config.model || 'qwen-2.5-32b'}`);
     console.log(`Max Memory Messages: ${config.maxMemoryMessages}`);
     
     // Simulate a conversation
