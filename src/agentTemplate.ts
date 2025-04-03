@@ -1,17 +1,13 @@
 import { Agent } from "@mastra/core/agent";
 import { Mastra } from "@mastra/core";
-import { google } from "@ai-sdk/google";
+
 import { groq } from "@ai-sdk/groq";
 import dotenv from 'dotenv';
 
 // Ensure dotenv is loaded first
 dotenv.config(); 
 
-// Verify key is loaded (optional console log for debugging)
-console.log('GOOGLE_API_KEY loaded:', !!process.env.GOOGLE_API_KEY); 
-if (!process.env.GOOGLE_API_KEY) {
-  throw new Error('FATAL: GOOGLE_API_KEY environment variable not found!');
-}
+
 
 // Interface for our agent configuration
 export interface AgentConfig {
